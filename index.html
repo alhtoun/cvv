@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f3e5f5;
+            color: #4a148c;
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+        .header {
+            text-align: center;
+            position: relative;
+        }
+        .header .profile-pic {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin-top: 10px;
+            color: #2e004f; /* لون أغمق للاسم */
+        }
+        .header p {
+            color: #2e004f; /* لون أغمق للتخصص */
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section h2 {
+            color: #000000;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 10px;
+        }
+        .dark-mode {
+            background-color: #212121;
+            color: #b2dfdb;
+        }
+        .dark-mode .container {
+            background-color: #424242;
+            color: #b2dfdb;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+            .header .profile-pic {
+                width: 100px;
+            }
+        }
+    </style>
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="profile_top_right.jpg" alt="Profile" class="profile-pic">
+            <h1>الهتون محمد أبالخيل</h1>
+            <p>تخصص تقنية معلومات - جامعة القصيم</p>
+            <button onclick="toggleMode()" class="btn btn-dark">تبديل الوضع الليلي/النهاري</button>
+        </div>
+        
+        <div class="section">
+            <h2>الملخص</h2>
+            <p>الاسم: الهتون محمد أبالخيل<br>العمر: ٢٣<br>التعليم: جامعة القصيم كلية الحاسب تخصص تقنية معلومات<br>اللغة: عربي - انجليزي<br>المهارات: التواصل، القدرة على القيام بمهام في وقت واحد، الإبداع</p>
+        </div>
+
+        <div class="section">
+            <h2>المهارات</h2>
+            <ul>
+                <li>التواصل</li>
+                <li>القدرة على القيام بمهام في وقت واحد</li>
+                <li>الإبداع</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Communication skills</li>
+                <li>Multitasking</li>
+                <li>Creativity skills</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>معلومات الاتصال</h2>
+            <p>Email: Alhatoun-mk@outlook.com</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>تواصل معي</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">الاسم:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">الرسالة:</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">إرسال</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
